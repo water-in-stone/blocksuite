@@ -149,6 +149,7 @@ export class EdgelessSelectionManager {
         states.forEach((selections, id) => {
           let hasTextSelection = false;
           let hasBlockSelection = false;
+          console.log('selection-manager, remote selection', selections);
 
           selections.forEach(selection => {
             if (selection.is('text')) {

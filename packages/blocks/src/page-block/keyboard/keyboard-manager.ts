@@ -65,6 +65,7 @@ export class PageKeyboardManager {
         'affine:paragraph',
         {}
       );
+      console.log('keyboard-manager, selection', selection);
 
       if (selection) {
         this._selection.set([

@@ -254,6 +254,7 @@ export class BookmarkBlockComponent extends BlockElement<BookmarkBlockModel> {
           const target = captureEventTarget(state.raw.target);
           const bookmarkBlock = target?.closest('affine-bookmark');
           if (!bookmarkBlock) return false;
+          console.log('bookmark-block, start dragging', bookmarkBlock);
 
           // If start dragging from the bookmark element
           // Set selection and take over dragStart event to start dragging

@@ -153,6 +153,8 @@ export class DatabaseBlockModalPreview extends WithDisposable(
 
   selectionUpdated: Slot<DataViewSelection | undefined> = new Slot();
   setSelection: (selection?: DataViewSelection) => void = selection => {
+    console.log('tools/expand, set selected blocks', selection);
+
     this.database.root.selection.set(
       selection
         ? [new DatabaseSelection({ path: this.path, viewSelection: selection })]

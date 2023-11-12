@@ -144,6 +144,7 @@ export class AttachmentBlockComponent extends BlockElement<AttachmentBlockModel>
           const target = captureEventTarget(state.raw.target);
           const attachmentBlock = target?.closest('affine-attachment');
           if (!attachmentBlock) return false;
+          console.log('attachment-block, start dragging', attachmentBlock);
 
           // If start dragging from the attachment element
           // Set selection and take over dragStart event to start dragging

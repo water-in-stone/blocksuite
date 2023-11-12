@@ -613,6 +613,7 @@ export class AffineDragHandleWidget extends WidgetElement<
         path: blockElement.path,
       })
     );
+    console.log('drag-handle, set selected blocks', selections);
 
     // When current page is edgeless page
     // We need to remain surface selection and set editing as true

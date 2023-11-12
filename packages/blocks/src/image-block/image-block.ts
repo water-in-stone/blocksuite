@@ -279,6 +279,7 @@ export class ImageBlockPageComponent extends ImageBlock {
           const imageBlock = target?.closest('affine-image');
           if (!imageBlock || shouldResizeImage(imageBlock, target))
             return false;
+          console.log('start dragging from image block');
 
           this.root.selection.set([
             this.root.selection.getInstance('block', {
